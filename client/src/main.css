@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
+    font-family: sans-serif;
+}
+
+.file {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file + label {
+    font-size: 20px;    
+    color: white;
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.file + label:hover {
+    background-color: darkblue;
+}
+
+.file + label {
+	cursor: pointer; 
+}
+
+.file:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.image {
+    margin: 20px;
+    max-width: 80%;
+    border: 3px solid lightgray;
+    border-radius: 7px;
+}
+
+.text {
+    text-align: center;
+    width: 80%;
+    border: 3px solid lightgray;
+    border-radius: 7px;
+}
+
+
